@@ -1,0 +1,211 @@
+# =============================================================================
+# .gitignore — IDE / AI tools / Node.js / Python / uv / dev environment
+# =============================================================================
+
+
+# -----------------------------------------------------------------------------
+# OS / Editor junk
+# -----------------------------------------------------------------------------
+.DS_Store
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+$RECYCLE.BIN/
+*.lnk
+*.swp
+*.swo
+*~
+
+
+# -----------------------------------------------------------------------------
+# IDE & editors
+# -----------------------------------------------------------------------------
+# VS Code
+.vscode/
+*.code-workspace
+.history/
+# JetBrains (IntelliJ, PyCharm, WebStorm, etc.)
+.idea/
+# Visual Studio
+.vs/
+*.suo
+*.user
+*.userosscache
+*.sln.docstates
+# Sublime Text
+*.sublime-workspace
+*.sublime-project
+# Vim / Emacs / others
+*.netrwhist
+*.tmp
+
+
+# -----------------------------------------------------------------------------
+# AI coding tools & assistants
+# -----------------------------------------------------------------------------
+.claude/
+.mimocode/
+.cursor/
+.cursorignore
+.continue/
+.codeium/
+.windsurf/
+.aider*
+.aider.conf.yml
+.aider.conf.yml.example
+.aider.input.history
+.aider.chat.history.md
+.aider.tags.cache.v3/
+.copilot/
+.gemini/
+.kiro/
+.zed/
+.github/copilot/
+.roo/
+
+
+# -----------------------------------------------------------------------------
+# Node.js / JavaScript / TypeScript
+# -----------------------------------------------------------------------------
+node_modules/
+jspm_packages/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+lerna-debug.log*
+.npm
+.yarn-integrity
+.yarn/cache
+.yarn/unplugged
+.yarn/build-state.yml
+.yarn/install-state.gz
+.pnp.*
+.pnpm-store/
+# Build output
+dist/
+build/
+out/
+.next/
+.nuxt/
+.cache/
+.parcel-cache/
+.turbo/
+.vercel/
+*.tsbuildinfo
+# Coverage
+coverage/
+*.lcov
+.nyc_output/
+# Lockfiles (uncomment to ignore; usually you DO want to commit these)
+# package-lock.json
+# yarn.lock
+# pnpm-lock.yaml
+
+
+# -----------------------------------------------------------------------------
+# Python
+# -----------------------------------------------------------------------------
+# Bytecode / caches
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+# Distribution / packaging
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+share/python-wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+MANIFEST
+# Virtual environments
+.venv/
+venv/
+env/
+ENV/
+env.bak/
+venv.bak/
+# Testing / type checking / linting caches
+.tox/
+.nox/
+.pytest_cache/
+.mypy_cache/
+.dmypy.json
+dmypy.json
+.pyre/
+.pytype/
+.ruff_cache/
+.coverage
+.coverage.*
+htmlcov/
+# Jupyter
+.ipynb_checkpoints/
+# Celery / SageMath
+celerybeat-schedule
+celerybeat.pid
+*.sage.py
+# Type checkers stubs
+.pytest_cache/
+
+
+# -----------------------------------------------------------------------------
+# uv (Astral) — Python package manager
+# -----------------------------------------------------------------------------
+# uv-managed virtualenv (do not commit environments)
+.venv/
+# uv local cache (per-user, machine-specific)
+.uv-cache/
+# uv may create a .python-version pin; uncomment to ignore:
+# .python-version
+# NOTE: uv.lock SHOULD be committed for applications.
+
+
+# -----------------------------------------------------------------------------
+# Environment & secrets
+# -----------------------------------------------------------------------------
+.env
+.env.*
+!.env.example
+!.env.template
+.env.local
+.env.*.local
+*.pem
+*.key
+*.cert
+*.p12
+secrets.json
+secrets.yaml
+secrets.yml
+
+
+# -----------------------------------------------------------------------------
+# Logs & runtime
+# -----------------------------------------------------------------------------
+logs/
+*.log
+pid/
+*.pid
+*.seed
+*.pid.lock
+pids/
+
+
+# -----------------------------------------------------------------------------
+# Miscellaneous / project-local data
+# -----------------------------------------------------------------------------
+tmp/
+temp/
+*.bak
+*.orig
